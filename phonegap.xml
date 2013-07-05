@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- phonegap.xml from http://ajamyajax.com -->
+<root>
+   <phonegap>
+      <mobile>
+         <platform>Apple iOS</platform>
+         <platform>Google Android</platform>
+         <platform>RIM BlackBerry</platform>
+         <platform>Samsung Bada</platform>
+         <platform>Nokia Symbian WRT</platform>
+      </mobile>
+   </phonegap>
+</root>

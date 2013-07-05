@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" id="viewport" content="initial-scale=1.0,user-scalable=no">
+    <title>PhoneGap with AJAX Example</title>
+
+    <script type="text/javascript" src="javascript/phonegap-1.0.0.js"></script>
+    <script type="text/javascript" src="javascript/simpleMobileAjax.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+
+    // *** PhoneGap functions:
+    var onLoad = function() {
+      document.addEventListener("deviceready", onDeviceReady, false);
+//      alert("onLoad");
+    }
+
+    var onDeviceReady = function() {
+//      alert("onDeviceReady");
+    }
+
+    // *** custom AJAX functions:
+    var showXMLFile = function() {
+      $('http://ajamyajax.com/phonegap.xml', 'containerID');
+    }
+    </script>
+</head>
+
+<body onload="onLoad();">
+  <input type="button" value="Display PhoneGap OS Platforms" onclick="showXMLFile();"/>
+
+  <div id="containerID" style="border-top:30px solid #ffffff;border-left:100px solid #ffffff;text-align:left;"></div>
+</body>
+</html>
